@@ -40,7 +40,7 @@ jobs:
           command: yarn test
   deploy:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:12.14.1
 
     working_directory: ~/repo
 
@@ -65,7 +65,7 @@ jobs:
 
       - run:
           name: "Write .clasprc.json file"
-          command: echo $CLASPRC > ~/.clasprc.json
+          command: echo $CLASPRC > ~/.clasp.json
 
       - run:
           name: "Release Google Script version"

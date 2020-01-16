@@ -8,6 +8,7 @@ var DateUtils = {
   getDatePart: function(dateObject) {
     return dateObject.toISOString().slice(0, 10);
   }
+  
 };
 
 if (typeof(exports) !== 'undefined') {
