@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "push": "cd src;clasp push;cd -",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "author": "",
   "license": "ISC",
