@@ -1,7 +1,6 @@
 #!/bin/sh
 
 echo "Running deploy script..." &&
-cd src &&
 version_description=`git log --oneline -1 | cat` && # e.g. ec2ab6f My commit message
 echo "Pushing code..." &&
 clasp push &&
