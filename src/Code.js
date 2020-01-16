@@ -1,7 +1,3 @@
-function myFunction() {
-  Logger.log('Hello world');
-}
-
-function anotherFunction() {
-  Logger.log('Another hello world 4');
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('index');
 }
