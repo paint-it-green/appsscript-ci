@@ -5,7 +5,7 @@
   "main": "Code.js",
   "scripts": {
     "test": "jest",
-    "push": "clasp push",
+    "push": "cd src;clasp push;cd -",
     "coverage": "jest --coverage",
     "lint": "./node_modules/.bin/eslint .",
     "deploy-production": "bash ./deploy.sh 'Production'"

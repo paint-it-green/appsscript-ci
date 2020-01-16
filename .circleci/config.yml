@@ -64,8 +64,8 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: "Write .clasp.json file"
-          command: echo $CLASPRC > ~/.clasp.json
+          name: "Write .clasprc.json file"
+          command: echo $CLASPRC > ~/.clasprc.json
 
       - run:
           name: "Release Google Script version"
