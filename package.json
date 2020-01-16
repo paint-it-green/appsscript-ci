@@ -23,5 +23,8 @@
     "collectCoverageFrom": [
       "src/*.js"
     ]
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3"
   }
 }

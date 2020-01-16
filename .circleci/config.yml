@@ -36,13 +36,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: "Lint the code"
-          command: yarn lint
-
-      - run:
-          name: "Run tests (with coverage)"
-          command: yarn coverage
-          
-      - run:
-          name: "Send coverage to CodeCov"
-          command: yarn add --dev codecov && ./node_modules/.bin/codecov
+          name: "Run tests"
+          command: yarn test
