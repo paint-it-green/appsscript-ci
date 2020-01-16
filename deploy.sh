@@ -10,6 +10,6 @@ echo "Created version $version_number" &&
 deploy_env=$1 &&
 deployment_id=`clasp deployments | cat | grep "$deploy_env" | cut -d' ' -f2` &&
 echo "Deploying version $version_number to $deploy_env (id: $deployment_id)" &&
-clasp redeploy $deployment_id $version_number $deploy_env &&
+clasp deploy $deployment_id $version_number $deploy_env &&
 echo "Deployed version $version_number to $deploy_env" &&
 cd ..

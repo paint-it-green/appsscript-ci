@@ -5,7 +5,7 @@
   "main": "Code.js",
   "scripts": {
     "test": "jest",
-    "push": "cd src;clasp push;cd -",
+    "push": "clasp push",
     "coverage": "jest --coverage",
     "lint": "./node_modules/.bin/eslint .",
     "deploy-production": "bash ./deploy.sh 'Production'"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@google/clasp": "^2.3.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^24.9.0",
     "babel-preset-env": "^1.7.0",

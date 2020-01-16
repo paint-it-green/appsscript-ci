@@ -56,11 +56,7 @@ jobs:
 
       - run:
           name: "Install dependencies"
-          command: yarn install
-
-      - run:
-          name: "Install dependencies"
-          command: yarn add @google/clasp 
+          command: yarn install 
 
       - save_cache:
           paths:
@@ -68,7 +64,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: "Write .clasprc.json file"
+          name: "Write .clasp.json file"
           command: echo $CLASPRC > ~/.clasp.json
 
       - run:
