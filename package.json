@@ -8,7 +8,7 @@
     "push": "cd src;clasp push;cd -",
     "coverage": "jest --coverage",
     "lint": "./node_modules/.bin/eslint .",
-    "deploy-production": "./deploy.sh 'Production'"
+    "deploy-production": "bash ./deploy.sh 'Production'"
   },
   "author": "",
   "license": "ISC",
