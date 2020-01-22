@@ -64,6 +64,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
+          name: "Write .clasp.json file"
+          command: echo $CLASP > ./.clasp.json
+
+      - run:
           name: "Write .clasprc.json file"
           command: echo $CLASPRC > ~/.clasprc.json
 
