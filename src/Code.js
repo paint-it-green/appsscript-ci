@@ -4,4 +4,5 @@ function doGet() {
 
 function sayHi() {
   Logger.log("Hi");
+  return "Hi";
 }
